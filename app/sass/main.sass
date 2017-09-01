@@ -1,0 +1,504 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+input, textarea, select
+	background-color: transparent
+	border: rgba(#000, .1) 1px solid
+	border-bottom: rgba(#000, .1) 2px solid
+	padding: 8px 22px
+	outline: none
+	display: inline-block
+	font-size: 16px
+	color: #333
+select
+	padding: 10px 22px
+
+.text-center
+	text-align: center
+
+.h2
+	font-size: 34px
+	color: $accent
+	padding: 25px 0
+
+.h3
+	font-size: 28px
+	color: #000
+	padding: 15px 0
+
+.h-white
+	color: #fff
+.x-write
+	width: 750px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.my-header
+	background-color: $accent
+	.container
+		margin: 0
+		width: 100%
+	.navbar
+		list-style-type: none
+		text-align: center
+		margin: 0
+		padding: 0
+		.popa
+			margin: 0 10%
+		li
+			display: inline-block
+			width: 15%
+			margin: 60px 0
+		a
+			color: #fff
+			font-size: 22px
+			font-weight: bold
+			text-decoration: none
+			&:hover
+				color: lighten($accent, 25%)
+	.logo
+		position: absolute
+		top: 0
+		left: 40%
+		img
+			width: 200px
+			height: auto
+		p
+			margin: 0
+			color: #fff
+			text-align: center
+			font-size: 22px
+			font-weight: bold
+			text-decoration: none
+
+.header
+	&-text
+		text-align: center
+		color: #fff
+		font-size: 20px
+		margin-right: 20px
+		h1
+			font-size: 44px
+			//font-family: RobotoBold
+		ul, li
+			text-align: left
+	&-img
+		img
+			width: 90%
+
+@keyframes gogo
+	from
+		bottom: -250px
+	to
+		bottom: -300px
+
+@-webkit-keyframes gogo
+	from
+		bottom: -250px
+	to
+		bottom: -300px
+
+.pulsar
+	animation: gogo 2s infinite alternate;
+	-webkit-animation: gogo 2s infinite alternate;
+	position: absolute
+	width: 30px
+	height: 100px
+	bottom: -260px
+	left: 50%
+	z-index: 99999
+	i
+		font-size: 32px
+		color: #fff
+
+.button
+	width: 400px
+	display: inline-block
+	border: 3px solid
+	color: $accent
+	text-decoration: none
+	padding: 16px 24px
+	font-size: 18px
+	font-weight: 600
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	margin-bottom: 25px
+	&:hover
+		text-decoration: none
+		color: #fff
+	&:focus
+		color: $accent
+	&:hover
+		background-color: lighten($accent, 10%)
+		&::after
+			opacity: .22
+	&.button-white
+		color: #fff
+		background-color: $accent
+		&:hover
+			text-decoration: none
+			color: $accent
+		&:focus
+			color: #fff
+		&:hover
+			background-color: lighten(#fff, 90%)
+			&::after
+				opacity: .22
+	&.button-yellow
+		color: #fff
+		&:hover
+			text-decoration: none
+			color: #FFCE00
+		&:focus
+			color: #fff
+		&:hover
+			background-color: lighten(#fff, 90%)
+			&::after
+				opacity: .22
+	&.button-green
+		color: #fff
+		&:hover
+			text-decoration: none
+			color: #4ABC96
+		&:focus
+			color: #fff
+		&:hover
+			background-color: lighten(#fff, 90%)
+			&::after
+				opacity: .22
+	&.button-red
+		color: #fff
+		&:hover
+			text-decoration: none
+			color: #ed686e
+		&:focus
+			color: #fff
+		&:hover
+			background-color: lighten(#fff, 90%)
+			&::after
+				opacity: .22
+
+.hidden
+	display: none
+
+.format
+	padding: 50px 20px
+	background-color: #fff
+	max-width: 320px
+	margin: auto
+	position: relative
+	input, textarea, select, button
+		background-color: #fff
+		color: $accent
+		width: 100%
+		margin-top: 15px
+	::-webkit-input-placeholder 
+		color: $accent
+	::-moz-placeholder          
+		color: $accent
+	:-moz-placeholder           
+		color: $accent
+	:-ms-input-placeholder      
+		color: $accent
+
+.forma
+	width: 100%
+	padding: 0
+	margin: 0
+	.h3
+		margin: 0
+		padding: 0
+		color: #fff
+	input, textarea, select
+		background-color: #fff
+		color: #4abc96
+		width: 100%
+		margin-top: 15px
+	::-webkit-input-placeholder 
+		color: #4abc96
+	::-moz-placeholder          
+		color: #4abc96
+	:-moz-placeholder           
+		color: #4abc96
+	:-ms-input-placeholder      
+		color: #4abc96
+	button
+		width: 100%
+		margin-top: 15px
+		background-color: #4abc96
+
+	&::-webkit-input-placeholder
+		color: #fff
+		opacity: 1
+	&::-moz-placeholder
+		color: #fff
+		opacity: 1
+	&::-ms-input-placeholder
+		color: #fff
+
+	option
+		color: #333
+
+.s
+	&-steps
+		.step
+			.arrow
+				position: absolute
+				top: 40px
+				left: 260px
+				font-size: 40px
+				color: $accent
+			img
+				width: 150px
+				height: auto
+				display: block
+				margin: 0 auto
+		.order
+			padding: 40px
+			width: 480px
+			margin: 0 auto
+	&-advantage
+		background-color: #f29c21
+		height: 500px
+		.ok
+			&-icon
+				width: 100px
+				height: auto
+				display: inline-block
+			&-text
+				width: 230px
+				height: 100px
+				font-size: 16px
+				color: #fff
+				font-weight: bold
+				display: inline-block
+				position: absolute
+		.l
+			&-logo
+				position: absolute
+				left: 25%
+				.logo
+					img
+						width: 200px
+			&-flash
+				position: absolute
+				left: 20%
+				top: 110px
+				img
+					width: 250px
+					height: auto
+	&-price
+		.el
+			background-color: #ed686e
+			width: 100%
+			height: 250px
+			color: white
+
+		.h2
+			margin-bottom: 0
+			padding-bottom: 0
+		.h33
+			font-weight: bold
+			font-size: 34px
+			
+			margin-bottom: 20px
+		.price-t
+			font-weight: bold
+			font-size: 34px
+		.po
+			margin: 0
+		.price-unit
+			border: 3px solid
+			color: $accent
+			padding: 20px 50px
+			margin: 40px 0
+			&-i
+				width: 100px
+				height: auto
+				display: block
+				margin: 0 auto
+			.h3
+				font-size: 24px
+			span
+				color: #000
+				font-weight: bold
+			p
+				color: #000
+			&-l
+				font-size: 24px
+				text-align: center
+				font-weight: bold
+		.but
+			text-align: center
+			padding: 0 20px
+			a
+				margin: 10px
+		.price-unit-b
+			background-color: $accent
+			color: $accent
+			padding: 20px 50px
+			margin: 40px 0
+			&-i
+				width: 100px
+				height: auto
+				display: block
+				margin: 0 auto
+			.h3
+				font-size: 24px
+			.bold
+				color: #fff
+				font-weight: bold
+			p
+				color: #fff
+			&-l
+				font-size: 24px
+				text-align: center
+				font-weight: bold
+			&-r
+				font-size: 24px
+				text-align: center
+				font-weight: bold
+				text-decoration: line-through
+		.price-unit-s
+			background-color: #FFCE00
+			color: $accent
+			padding: 20px 50px
+			margin: 40px 0
+			&-i
+				width: 100px
+				height: auto
+				display: block
+				margin: 0 auto
+			.h3
+				font-size: 24px
+			.bold
+				color: #fff
+				font-weight: bold
+			p
+				color: #fff
+			&-l
+				font-size: 24px
+				text-align: center
+				font-weight: bold
+			&-r
+				font-size: 24px
+				text-align: center
+				font-weight: bold
+				text-decoration: line-through
+		.pri
+			margin-bottom: 30px
+	&-just-do-it
+		background-color: #4abc96
+		p
+			color: #fff
+			font-size: 20px
+		&-img
+			position: absolute
+			right: 0
+			top: -100px
+			width: 100%
+			height: 450px
+			background-image: url("../img/9.png")
+			background-size: cover
+		.but
+			text-align: center
+			padding: 0 20px
+			a
+				margin: 10px
+	&-partner
+		img
+			width: 100%
+	&-addres
+		background-color: $accent
+		img
+			width: 300px
+			left: 0
+		p
+			position: relative
+			color: #fff
+			padding-left: 34px
+			font-size: 20px
+			a
+				text-decoration: none
+				color: #fff
+				:hover
+					text-decoration: none
+					color: #fff
+		.fa
+			position: absolute
+			left: 0
+			top: 8px
+			font-size: 32px
+			color: #fff
+		.map
+			min-height: 200px
+			opacity: .7
+			transition: opacity .5s ease
+			padding: 0
+			&:hover
+				opacity: 1
+		.mon
+			width: 100%
+			padding: 0 0 0 10px
+			p
+				margin-left: 50px
+
+.my-footer
+	background-color: #555
+	color: #fff
+	.name
+		text-align: right
+.ssilka
+	color: #25aae2
+
+@import "media" // Всегда в конце

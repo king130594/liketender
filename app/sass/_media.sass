@@ -1,0 +1,310 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header
+		&-text
+			font-size: 18px
+
+	.s
+		&-steps
+			.step
+				.arrow
+					position: absolute
+					top: 40px
+					left: 220px
+		&-advantage
+			.ok
+				&-icon
+					width: 80px
+				&-text
+					width: 200px
+					font-size: 14px
+			.l
+				&-logo
+					.logo
+						img
+							width: 180px
+				&-flash
+					top: 100px
+		&-price
+			.price-unit
+				.but
+					.button
+						padding: 16px 24px
+						font-size: 14px
+		&-just-do-it
+			&-img
+				top: -70px
+				height: 390px
+
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.my-header
+		.navbar
+			.popa
+				margin: 0 8%
+			li
+				display: inline-block
+				width: 15%
+				margin: 60px 0
+			a
+				color: #fff
+				font-size: 18px
+			button: 100%
+		.logo
+			img
+				width: 200px
+				height: auto
+
+	@keyframes gogo
+		from
+			bottom: -300px
+		to
+			bottom: -350px
+
+	@-webkit-keyframes gogo
+		from
+			bottom: -300px
+		to
+			bottom: -350px
+
+	.pulsar
+		bottom: -320px
+
+	.s
+		&-steps
+			.step
+				.arrow
+					display: none
+		&-advantage
+			.ok
+				&-icon
+					display: block
+					margin: 0 auto
+				&-text
+					width: 100%
+					text-align: center
+			.l
+				&-logo
+					.logo
+						img
+							width: 180px
+				&-flash
+					top: 100px
+		&-price
+			.price-unit
+				.le
+					margin-bottom: 12px
+				.but
+					padding: 0
+					.button
+						padding: 14px 14px
+						font-size: 12px
+
+		&-just-do-it
+			p
+				font-size: 16px
+			&-img
+				position: absolute
+				top: -20px
+				height: 300px
+		&-partner
+			p
+				font-size: 14px
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.my-header
+		.button
+			margin-bottom: 70px
+			width: 100%
+		.navbar
+			display: none
+		.logo
+			img
+				width: 200px
+				height: auto
+	.header
+		&-img
+			img
+				margin-top: 100px
+				width: 100%
+
+	@keyframes gogo
+		from
+			bottom: -800px
+		to
+			bottom: -830px
+
+	@-webkit-keyframes gogo
+		from
+			bottom: -800px
+		to
+			bottom: -830px
+
+	.pulsar
+		bottom: -800px
+		left: 46%
+
+	.s
+		&-advantage
+			.l
+				&-logo
+					display: none
+				&-flash
+					display: none
+		&-price
+			.price-unit
+				.but
+					.button
+						padding: 16px 24px
+						font-size: 14px
+						width: 100%
+		&-just-do-it
+			p
+				font-size: 16px
+			&-img
+				display: none
+		&-partner
+			p
+				font-size: 16px
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.my-header
+		.logo
+			position: absolute
+			top: 0
+			left: 30%
+		.header
+			&-img
+				img
+					margin-top: 130px
+					width: 100%
+
+	@keyframes gogo
+		from
+			bottom: -680px
+		to
+			bottom: -710px
+
+	@-webkit-keyframes gogo
+		from
+			bottom: -680px
+		to
+			bottom: -710px
+
+	.pulsar
+		bottom: -680px
+		left: 46%
+
+	.s
+		&-advantage
+			.ok
+				padding: 0 20px
+				&-icon
+					display: inline-block
+				&-text
+					width: 250px
+					height: 50px
+			.button
+				width: 100% !important
+		&-just-do-it
+			.h2
+				font-size: 24px
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.my-header
+		.logo
+			position: absolute
+			top: 0
+			left: 18%
+
+	.header
+		&-text
+			text-align: center
+			color: #fff
+			font-size: 16px
+			margin-right: 20px
+			h1
+				font-size: 24px
+
+	@keyframes gogo
+		from
+			bottom: -650px
+		to
+			bottom: -680px
+
+	@-webkit-keyframes gogo
+		from
+			bottom: -650px
+		to
+			bottom: -680px
+
+	.pulsar
+		bottom: -650px
+		left: 46%
+
+	.s
+		&-advantage
+			.h2
+				font-size: 24px
+			.ok
+				padding: 0
+				&-icon
+					width: 60px
+				&-text
+					width: 220px
+					height: 50px
+	.s-steps
+		.button
+			width: 100%
+	.s-price
+		.button
+			width: 100%
+		.el
+			height: 450px
+
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 375px)
+
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
